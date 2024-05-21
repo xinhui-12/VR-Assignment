@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ddafb4cf05a59f4dad6eb78681fd74c, type: 3}
+  m_Name: ModernPlasticChair
+  m_EditorClassIdentifier: 
+  itemID: 1
+  itemName: ModernPlasticChair
+  itemIcon: {fileID: 0}
+  itemPrefab: {fileID: 919132149155446097, guid: db64c4e76328a664dae614673cdca199,
+    type: 3}
