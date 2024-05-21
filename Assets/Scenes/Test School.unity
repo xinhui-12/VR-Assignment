@@ -1760,52 +1760,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 59288533}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &59376572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 59376574}
-  - component: {fileID: 59376573}
-  m_Layer: 0
-  m_Name: XR Interaction Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &59376573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59376572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
---- !u!4 &59376574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59376572}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5004566, y: -19.956564, z: 36.38419}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &61981922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3529,7 +3483,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 0
-  m_RaycastTriggerInteraction: 1
+  m_RaycastTriggerInteraction: 0
 --- !u!114 &101316093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3585,7 +3539,7 @@ RectTransform:
   m_GameObject: {fileID: 101316090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 0.0055381325, y: 0.0055381325, z: 0.0055381325}
+  m_LocalScale: {x: 0.005564822, y: 0.005564822, z: 0.005564822}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 746932466}
@@ -3594,7 +3548,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 8, y: 1}
-  m_SizeDelta: {x: 800, y: 416.99997}
+  m_SizeDelta: {x: 1071, y: 415}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101316096
 MonoBehaviour:
@@ -3603,7 +3557,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101316090}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86df10ac03521dd4ba3f1f7d36b46835, type: 3}
   m_Name: 
@@ -7283,6 +7237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Device Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10454,6 +10413,7 @@ MonoBehaviour:
   m_SampleFrequency: 60
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
+  m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 2147483681
@@ -10465,6 +10425,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 1
   m_EnableUIInteraction: 1
+  m_BlockUIOnInteractableSelection: 1
   m_AllowAnchorControl: 1
   m_UseForceGrab: 0
   m_RotateSpeed: 180
@@ -10480,6 +10441,7 @@ MonoBehaviour:
   m_EnableARRaycasting: 0
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
+  m_ScaleMode: 0
 --- !u!1001 &256619254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27786,6 +27748,7 @@ GameObject:
   - component: {fileID: 746932466}
   - component: {fileID: 746932468}
   - component: {fileID: 746932467}
+  - component: {fileID: 746932469}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -27814,7 +27777,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 400}
+  m_SizeDelta: {x: 100, y: 300}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &746932467
 MonoBehaviour:
@@ -27854,6 +27817,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746932465}
   m_CullTransparentMesh: 1
+--- !u!223 &746932469
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746932465}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &749680118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33538,6 +33524,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_ScaleToggleAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 9cc8f7ab-e6bd-4168-a174-f33494fa8ba8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_ScaleDeltaAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Delta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: f26d1b69-9356-4baf-b9cd-3b6758130af8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
 --- !u!1001 &939692669
 PrefabInstance:
@@ -37957,6 +37967,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_ScaleToggleAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: c9e2232a-c8a0-4b25-93dd-1c83a44a2f92
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_ScaleDeltaAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Delta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 6c4dc02e-e9da-48b8-8761-827e50102316
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
 --- !u!1001 &1074529317
 PrefabInstance:
@@ -44413,7 +44447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 863644624}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 55
@@ -44502,6 +44536,7 @@ MonoBehaviour:
   m_SampleFrequency: 60
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
+  m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 2147483681
@@ -44513,6 +44548,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 1
   m_EnableUIInteraction: 1
+  m_BlockUIOnInteractableSelection: 1
   m_AllowAnchorControl: 1
   m_UseForceGrab: 0
   m_RotateSpeed: 180
@@ -44528,6 +44564,7 @@ MonoBehaviour:
   m_EnableARRaycasting: 0
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
+  m_ScaleMode: 0
 --- !u!1001 &1275232791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55614,6 +55651,7 @@ GameObject:
   - component: {fileID: 1582474625}
   - component: {fileID: 1582474624}
   - component: {fileID: 1582474623}
+  - component: {fileID: 1582474628}
   m_Layer: 2
   m_Name: XR Origin
   m_TagString: Untagged
@@ -55663,7 +55701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
+  m_System: {fileID: 1582474625}
   m_TurnSpeed: 60
   m_LeftHandTurnAction:
     m_UseReference: 0
@@ -55766,6 +55804,51 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 317532816}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.36144
+--- !u!114 &1582474628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582474621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 1582474625}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_EnableFly: 0
+  m_UseGravity: 1
+  m_GravityApplicationMode: 1
+  m_ForwardSource: {fileID: 1806694329}
+  m_LeftHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 49ed2a13-9bbc-48fd-bed7-02ba656b7c25
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  m_RightHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 3f1fb32a-195e-4914-8913-4a9db2ec8a9e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1001 &1583785414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62307,7 +62390,6 @@ MonoBehaviour:
       m_Action: Rotation
       m_Flags: 0
     m_Flags: 0
-  m_HasMigratedActions: 1
 --- !u!81 &1806694332
 AudioListener:
   m_ObjectHideFlags: 0
@@ -76676,7 +76758,6 @@ SceneRoots:
   - {fileID: 2013410475}
   - {fileID: 1993093419}
   - {fileID: 954937712}
-  - {fileID: 59376574}
   - {fileID: 869601585}
   - {fileID: 101316095}
   - {fileID: 201051564}
