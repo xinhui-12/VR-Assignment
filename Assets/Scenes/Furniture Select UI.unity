@@ -758,6 +758,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allItems:
   - {fileID: 11400000, guid: 5ecb889636c6a9240a2c4e295fea3dd7, type: 2}
+  - {fileID: 11400000, guid: 6558e01020a3d2a4fbfca36f13c81184, type: 2}
+  - {fileID: 11400000, guid: a254a81ad1824f547a06c446fc7e44a9, type: 2}
+  - {fileID: 11400000, guid: be539e0737896dd4a9c1e4c069f3a0c8, type: 2}
+  - {fileID: 11400000, guid: 917e44bfb28237c4285cd26ae9e4aba9, type: 2}
+  - {fileID: 11400000, guid: 1b10f85e8c42bdd4e8f7c5fbc82f1134, type: 2}
+  - {fileID: 11400000, guid: 16eb34c06d0f2fc43ad3e49c102d7fa2, type: 2}
   saveFilePath: itemInstances.json
 --- !u!4 &258237294
 Transform:
@@ -2027,6 +2033,12 @@ MonoBehaviour:
   saveLoadManager: {fileID: 258237293}
   allItems:
   - {fileID: 11400000, guid: 5ecb889636c6a9240a2c4e295fea3dd7, type: 2}
+  - {fileID: 11400000, guid: 6558e01020a3d2a4fbfca36f13c81184, type: 2}
+  - {fileID: 11400000, guid: a254a81ad1824f547a06c446fc7e44a9, type: 2}
+  - {fileID: 11400000, guid: be539e0737896dd4a9c1e4c069f3a0c8, type: 2}
+  - {fileID: 11400000, guid: 917e44bfb28237c4285cd26ae9e4aba9, type: 2}
+  - {fileID: 11400000, guid: 1b10f85e8c42bdd4e8f7c5fbc82f1134, type: 2}
+  - {fileID: 11400000, guid: 16eb34c06d0f2fc43ad3e49c102d7fa2, type: 2}
 --- !u!4 &1081353566
 Transform:
   m_ObjectHideFlags: 0
