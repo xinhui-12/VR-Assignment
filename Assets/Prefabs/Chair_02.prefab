@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eab883549c13164288f2afd70c67a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 5ecb889636c6a9240a2c4e295fea3dd7, type: 2}
   customScale: {x: 0, y: 0, z: 0}
   customColor: {r: 0, g: 0, b: 0, a: 0}
-  customMaterial: {fileID: 0}
+  customMaterial: {fileID: 2100000, guid: 2c39ef0333251a745ab2f53a25023c1f, type: 2}

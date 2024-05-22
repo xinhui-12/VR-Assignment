@@ -18,9 +18,13 @@ public class ItemController : MonoBehaviour
     public void ApplyCustomizations()
     {
         transform.localScale = customScale;
-        if (itemRenderer != null)
+        itemRenderer.material.color = customColor;
+        if (customMaterial == null)
         {
-            itemRenderer.material.color = customColor;
+            customMaterial = itemRenderer.material;
+        }
+        else
+        {
             itemRenderer.material = customMaterial;
         }
     }

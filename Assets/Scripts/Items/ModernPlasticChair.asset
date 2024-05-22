@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ModernPlasticChair
   m_EditorClassIdentifier: 
   itemID: 1
-  itemName: ModernPlasticChair
-  itemIcon: {fileID: 0}
-  itemPrefab: {fileID: 919132149155446097, guid: db64c4e76328a664dae614673cdca199,
+  itemName: Modern Plastic Chair
+  itemIcon: {fileID: 21300000, guid: edea06992ae14a6419c0e3ca7c9dd87e, type: 3}
+  itemPrefab: {fileID: 5650776162942041753, guid: 4815283b755fb3a40b3c2aa5f2e3a3a2,
     type: 3}
