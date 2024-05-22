@@ -38,7 +38,7 @@ public class PauseMenuManager : MonoBehaviour
         musicSlider.onValueChanged.AddListener(OnMusicSliderChanged);
         brightnessSlider.onValueChanged.AddListener(OnBrightnessSliderChanged);
 
-        //pauseMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(false);
     }
 
     private void OnPauseAction(InputAction.CallbackContext context)
