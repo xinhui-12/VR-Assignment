@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 1685574833684801072, guid: c28dbf95c840bb5499069bc7091ae018,
         type: 3}
       propertyPath: m_Name
-      value: Door_A (1) Variant
+      value: BigDoor_A
       objectReference: {fileID: 0}
     - target: {fileID: 1685574833684801072, guid: c28dbf95c840bb5499069bc7091ae018,
         type: 3}
@@ -93,7 +93,9 @@ PrefabInstance:
       propertyPath: doorAnimator
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3819479466099906317, guid: c28dbf95c840bb5499069bc7091ae018, type: 3}
+    - {fileID: 2202404359246622202, guid: c28dbf95c840bb5499069bc7091ae018, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

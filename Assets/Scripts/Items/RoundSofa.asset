@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ddafb4cf05a59f4dad6eb78681fd74c, type: 3}
+  m_Name: RoundSofa
+  m_EditorClassIdentifier: 
+  itemID: 5
+  itemName: Round Sofa
+  itemIcon: {fileID: 21300000, guid: e066a025c4e2e514b8289e53024ea17d, type: 3}
+  itemPrefab: {fileID: 8465644037930388936, guid: cbcc7a386fc1cc840ab1986bf8cb78b9,
+    type: 3}
