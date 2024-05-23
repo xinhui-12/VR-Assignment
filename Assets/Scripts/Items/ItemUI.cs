@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class ItemUI : MonoBehaviour
 {
@@ -39,7 +40,10 @@ public class ItemUI : MonoBehaviour
     {
         Debug.Log("Item clicked: " + item.itemName);
 
-        Vector3 defaultPosition = Vector3.zero;
+        Vector3 cameraPosition = Camera.main.transform.position;
+        Vector3 cameraForward = Camera.main.transform.forward;
+        //Vector3 defaultPosition = Vector3.zero;
+        Vector3 defaultPosition = cameraPosition + cameraForward * 1.0f;
         Vector3 defaultScale = Vector3.one;
         Color defaultColor = Color.white;
         Material defaultMaterial = null;
