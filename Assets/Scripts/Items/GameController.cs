@@ -10,21 +10,17 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        saveLoadManager.Load(itemManager); // Load saved items
-
-        // Start a coroutine to wait until the ItemManager component is enabled
+        saveLoadManager.Load(itemManager);
         StartCoroutine(PopulateScrollViewCoroutine());
     }
 
     IEnumerator PopulateScrollViewCoroutine()
     {
-        // Wait until the ItemManager component is enabled
         while (!itemManager.enabled)
         {
             yield return null;
         }
 
-        // Once enabled, populate the scroll view
         itemManager.PopulateScrollView(allItems);
     }
 

@@ -12,7 +12,7 @@ public class ItemManager : MonoBehaviour
     {
         if (contentPanel != null)
         {
-            PopulateScrollView(new List<Item>()); // Populate the scroll view with an empty list
+            PopulateScrollView(new List<Item>());
         }
         else
         {
