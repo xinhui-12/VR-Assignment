@@ -1960,12 +1960,12 @@ GameObject:
   - component: {fileID: 7412291008519719095}
   - component: {fileID: 5868864260073637650}
   - component: {fileID: 8545179773725062104}
-  - component: {fileID: 9132740925868746583}
   - component: {fileID: -824443839068871982}
   - component: {fileID: 4828203333252211986}
   - component: {fileID: -1160068977891046345}
   - component: {fileID: 5133369857097420706}
   - component: {fileID: 3093178040821027706}
+  - component: {fileID: -8002049024098538729}
   m_Layer: 0
   m_Name: Sofa_05
   m_TagString: Untagged
@@ -2039,22 +2039,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9132740925868746583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7896621913975525901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eab883549c13164288f2afd70c67a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 287cd89ac5cb946408406f7db40c37d7, type: 2}
-  customScale: {x: 0, y: 0, z: 0}
-  customColor: {r: 0, g: 0, b: 0, a: 0}
-  customMaterial: {fileID: 0}
 --- !u!54 &-824443839068871982
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2286,6 +2270,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-8002049024098538729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896621913975525901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 287cd89ac5cb946408406f7db40c37d7, type: 2}
 --- !u!1 &8138316907163492462
 GameObject:
   m_ObjectHideFlags: 0

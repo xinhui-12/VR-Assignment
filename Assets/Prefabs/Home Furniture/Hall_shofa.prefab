@@ -2277,12 +2277,12 @@ GameObject:
   - component: {fileID: 9163680992660024527}
   - component: {fileID: 5225359580786123626}
   - component: {fileID: 8025629573953623968}
-  - component: {fileID: 3571500879348045292}
   - component: {fileID: 8036701814871880860}
   - component: {fileID: -2619171845155199138}
   - component: {fileID: 6797012578216512226}
   - component: {fileID: -3408893112721147954}
   - component: {fileID: 2355213024681235411}
+  - component: {fileID: -3364230606080247702}
   m_Layer: 0
   m_Name: Hall_shofa
   m_TagString: Untagged
@@ -2356,22 +2356,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3571500879348045292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385772751843997301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eab883549c13164288f2afd70c67a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: e1b1df8e3c5de094cbddce95bf4e916e, type: 2}
-  customScale: {x: 0, y: 0, z: 0}
-  customColor: {r: 0, g: 0, b: 0, a: 0}
-  customMaterial: {fileID: 0}
 --- !u!54 &8036701814871880860
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2603,6 +2587,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-3364230606080247702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8385772751843997301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: e1b1df8e3c5de094cbddce95bf4e916e, type: 2}
 --- !u!1 &9005769021900144274
 GameObject:
   m_ObjectHideFlags: 0

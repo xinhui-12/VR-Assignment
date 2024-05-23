@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 8321340200160605616}
   - component: {fileID: 5027742197533297853}
   - component: {fileID: 3248280421879577599}
+  - component: {fileID: 6881601518701009386}
   m_Layer: 0
   m_Name: Blackboard_A
   m_TagString: Untagged
@@ -423,6 +424,19 @@ MonoBehaviour:
   scaleTextX: {fileID: 7468336515910609172}
   scaleTextY: {fileID: 7319025356582319729}
   scaleTextZ: {fileID: 3967804058132360370}
+--- !u!114 &6881601518701009386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822441121234838270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 680b308f43adf374bb2349cf481b8ba2, type: 2}
 --- !u!1 &1043435256534978937
 GameObject:
   m_ObjectHideFlags: 0

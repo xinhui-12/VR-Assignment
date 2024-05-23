@@ -1276,12 +1276,12 @@ GameObject:
   - component: {fileID: 6417813692025721312}
   - component: {fileID: 7980233513785613893}
   - component: {fileID: 5285971765238639247}
-  - component: {fileID: -4005950534757644243}
   - component: {fileID: 4596372934047651142}
   - component: {fileID: 7267058966940735352}
   - component: {fileID: -8044707200328541473}
   - component: {fileID: 7371520802284694059}
   - component: {fileID: -4571704495592730893}
+  - component: {fileID: -1525486618662449588}
   m_Layer: 0
   m_Name: Chair_05
   m_TagString: Untagged
@@ -1355,22 +1355,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-4005950534757644243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5934467914813180762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eab883549c13164288f2afd70c67a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 6558e01020a3d2a4fbfca36f13c81184, type: 2}
-  customScale: {x: 0, y: 0, z: 0}
-  customColor: {r: 0.24313727, g: 0.32941177, b: 0.34509805, a: 0}
-  customMaterial: {fileID: 0}
 --- !u!54 &4596372934047651142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1602,6 +1586,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-1525486618662449588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934467914813180762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 6558e01020a3d2a4fbfca36f13c81184, type: 2}
 --- !u!1 &5939590195745123527
 GameObject:
   m_ObjectHideFlags: 0

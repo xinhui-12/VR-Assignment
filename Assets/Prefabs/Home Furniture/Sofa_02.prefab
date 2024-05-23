@@ -2245,6 +2245,7 @@ GameObject:
   - component: {fileID: -2358503022472574478}
   - component: {fileID: 4698320192006103487}
   - component: {fileID: 7614988067974070726}
+  - component: {fileID: -752871172833608334}
   m_Layer: 0
   m_Name: Sofa_02
   m_TagString: Untagged
@@ -2519,6 +2520,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-752871172833608334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765854841646629437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: fcbb43ea30ec14043b3c9032b55de64d, type: 2}
 --- !u!1 &6492644656744284019
 GameObject:
   m_ObjectHideFlags: 0

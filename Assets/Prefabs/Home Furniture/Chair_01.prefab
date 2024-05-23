@@ -1749,6 +1749,7 @@ GameObject:
   - component: {fileID: -7476551694379435103}
   - component: {fileID: -6191162818350644642}
   - component: {fileID: 1243719522782463485}
+  - component: {fileID: -307418629748920308}
   m_Layer: 0
   m_Name: Chair_01
   m_TagString: Untagged
@@ -2053,6 +2054,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-307418629748920308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4731351843039842299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 9e10829b5718b8a40a4b3ce19331b0d7, type: 2}
 --- !u!1 &4783976742725358094
 GameObject:
   m_ObjectHideFlags: 0

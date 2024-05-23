@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 6922173314441737948}
   - component: {fileID: 7090530231764373183}
   - component: {fileID: 7173456460255997232}
+  - component: {fileID: -1265375082886307273}
   m_Layer: 0
   m_Name: Chair_A
   m_TagString: Untagged
@@ -322,6 +323,19 @@ MonoBehaviour:
   scaleTextX: {fileID: 183313917054011889}
   scaleTextY: {fileID: 7566232399953835583}
   scaleTextZ: {fileID: 4567347793277997472}
+--- !u!114 &-1265375082886307273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580444192384659015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7208500feb63c41941ec66a34a3ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 8f303f7737cfb5b42a92b00c426d1c4d, type: 2}
 --- !u!1 &977502762497582656
 GameObject:
   m_ObjectHideFlags: 0

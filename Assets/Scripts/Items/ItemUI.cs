@@ -6,7 +6,7 @@ public class ItemUI : MonoBehaviour
 {
     public Image icon;
     public TMP_Text itemName;
-    public Button button;
+    public Button button; // Reference to the button component
 
     private Item item;
     private ItemManager itemManager;
@@ -27,9 +27,10 @@ public class ItemUI : MonoBehaviour
         icon.sprite = item.itemIcon;
         itemName.text = item.itemName;
 
+        // Set the auto-size options for the TextMeshPro text component
         itemName.enableAutoSizing = true;
-        itemName.fontSizeMin = 10;
-        itemName.fontSizeMax = 100;
+        itemName.fontSizeMin = 10; // Minimum font size
+        itemName.fontSizeMax = 100; // Maximum font size
 
         button.onClick.AddListener(OnItemClick);
     }
@@ -40,8 +41,6 @@ public class ItemUI : MonoBehaviour
 
         Vector3 defaultPosition = Vector3.zero;
         Vector3 defaultScale = Vector3.one;
-        Color defaultColor = Color.white;
-        Material defaultMaterial = null;
-        itemManager.InstantiateItem(item, defaultPosition, defaultScale, defaultColor, defaultMaterial);
+        itemManager.InstantiateItem(item, defaultPosition, defaultScale);
     }
 }
