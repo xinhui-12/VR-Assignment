@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4168558521646661968}
   - component: {fileID: 2095701042968474794}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SliderZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3248280421879577599}
         m_TargetAssemblyTypeName: ScaleSlider, Assembly-CSharp
         m_MethodName: SetZScale
         m_Mode: 0
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 8321340200160605616}
   - component: {fileID: 5027742197533297853}
   - component: {fileID: 3248280421879577599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Blackboard_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5119330720015708681}
   - component: {fileID: 5250100545435231194}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SliderX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3248280421879577599}
         m_TargetAssemblyTypeName: ScaleSlider, Assembly-CSharp
         m_MethodName: SetXScale
         m_Mode: 0
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 3030373228318372580}
   - component: {fileID: 2420353919833423213}
   - component: {fileID: 6652508105930915740}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: textViewX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 7158257714024700114}
   - component: {fileID: 4726193700273682873}
   - component: {fileID: 2190509542727051524}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 4677326191216059197}
   - component: {fileID: 2139440104373568016}
   - component: {fileID: 473452684066064593}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: textViewY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5287962548666750680}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 7244810232259532699}
   - component: {fileID: 6135342659827372572}
   - component: {fileID: 3967804058132360370}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: textViewZValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 5373544241242065351}
   - component: {fileID: 9213329103380960447}
   - component: {fileID: 745089040160341108}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 3397676412583710783}
   - component: {fileID: 4272172087854610690}
   - component: {fileID: 1950677273903373968}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1199,7 +1199,7 @@ GameObject:
   - component: {fileID: 3885084003744516807}
   - component: {fileID: 5070064707384345456}
   - component: {fileID: 5643795118234503805}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 7204389362855103834}
   - component: {fileID: 8915226865269355074}
   - component: {fileID: 7397246757161968425}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: textViewZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8470212587221628924}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4385656328629934778}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 6881494174037096927}
   - component: {fileID: 3373865361750915828}
   - component: {fileID: 7468336515910609172}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: textViewXValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,7 +1614,7 @@ GameObject:
   - component: {fileID: 906830504221632003}
   - component: {fileID: 673824590898177879}
   - component: {fileID: 1472788739193747325}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1699,7 @@ GameObject:
   - component: {fileID: 8470882830821433484}
   - component: {fileID: 3507913622463670814}
   - component: {fileID: 1784824936402632198}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1774,7 +1774,7 @@ GameObject:
   - component: {fileID: 9077454513151654123}
   - component: {fileID: 1657494959736783698}
   - component: {fileID: 7319025356582319729}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: textViewYValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1906,7 +1906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7725588518943771203}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1944,7 +1944,7 @@ GameObject:
   - component: {fileID: 2383195292736325521}
   - component: {fileID: 4761430885964401301}
   - component: {fileID: 6027250343001640874}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135442171814214997}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2055,7 @@ GameObject:
   - component: {fileID: 8565868540319942111}
   - component: {fileID: 541279676779325826}
   - component: {fileID: 8982364181759770327}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2129,7 +2129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7215687540431318522}
   - component: {fileID: 8185828868062352771}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SliderY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2209,7 +2209,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3248280421879577599}
         m_TargetAssemblyTypeName: ScaleSlider, Assembly-CSharp
         m_MethodName: SetYScale
         m_Mode: 0
@@ -2233,7 +2233,7 @@ GameObject:
   - component: {fileID: 9090900369670392613}
   - component: {fileID: 3695666586201032245}
   - component: {fileID: 5384969013134710872}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Rotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2365,7 +2365,7 @@ GameObject:
   - component: {fileID: 2647646413578248083}
   - component: {fileID: 4072182719777283333}
   - component: {fileID: 7963581549984554750}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2440,7 +2440,7 @@ GameObject:
   - component: {fileID: 278226263139885364}
   - component: {fileID: 8497601847677026758}
   - component: {fileID: 6154287823298387251}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2513,7 +2513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2371327035642522284}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2553,7 +2553,7 @@ GameObject:
   - component: {fileID: 2497568254610000587}
   - component: {fileID: 8055836120191066607}
   - component: {fileID: 7193801137794420390}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
