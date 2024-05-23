@@ -20,18 +20,12 @@ public class UICanvasFollower : MonoBehaviour
 
     private void SetInitialPositionAndRotation()
     {
-        //Vector3 newPosition = vrCamera.position + vrCamera.forward * distanceFromCamera;
-        //transform.position = newPosition;
+        Vector3 newPosition = vrCamera.position + vrCamera.forward * distanceFromCamera;
+        uiCanvas.transform.position = newPosition;
 
-        //Vector3 lookDirection = transform.position - vrCamera.position;
-        //lookDirection.y = 0;
-        //transform.rotation = Quaternion.LookRotation(lookDirection);
-
-        // Position the pause menu in front of the user
-        Vector3 cameraPosition = Camera.main.transform.position;
-        Vector3 cameraForward = Camera.main.transform.forward;
-        uiCanvas.transform.position = cameraPosition + cameraForward * 1.0f; // Adjust the distance as needed
-        uiCanvas.transform.rotation = Quaternion.LookRotation(cameraForward);
+        Vector3 lookDirection = uiCanvas.transform.position - vrCamera.position;
+        lookDirection.y = 0;
+        uiCanvas.transform.rotation = Quaternion.LookRotation(lookDirection);
     }
 
     private void ToggleUICanvas()
