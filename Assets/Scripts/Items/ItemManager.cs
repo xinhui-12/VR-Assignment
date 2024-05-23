@@ -3,19 +3,31 @@ using System.Collections.Generic;
 
 public class ItemManager : MonoBehaviour
 {
-    private Transform contentPanel;
+    public Transform contentPanel;
     public GameObject itemUIPrefab;
 
-    public void Awake()
+    private bool isContentPanelInitialized = false;
+
+    void Start()
     {
-        contentPanel = GameObject.Find("InventoryContent").transform;
-        if (contentPanel == null)
+        if (contentPanel != null)
         {
-            Debug.LogError("Content panel not found!");
+            PopulateScrollView(new List<Item>()); // Populate the scroll view with an empty list
+        }
+        else
+        {
+            Debug.LogError("Content panel not assigned to ItemManager!");
         }
     }
+
     public void PopulateScrollView(List<Item> items)
     {
+        if (contentPanel == null)
+        {
+            Debug.LogError("Content panel not assigned to ItemManager!");
+            return;
+        }
+
         Debug.Log("Populating items...");
         foreach (Item item in items)
         {

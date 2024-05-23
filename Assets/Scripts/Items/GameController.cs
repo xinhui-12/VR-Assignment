@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,9 +10,22 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        Invoke("PopulateScrollViewDelayed", 0.1f);
+        saveLoadManager.Load(itemManager); // Load saved items
+
+        // Start a coroutine to wait until the ItemManager component is enabled
+        StartCoroutine(PopulateScrollViewCoroutine());
+    }
+
+    IEnumerator PopulateScrollViewCoroutine()
+    {
+        // Wait until the ItemManager component is enabled
+        while (!itemManager.enabled)
+        {
+            yield return null;
+        }
+
+        // Once enabled, populate the scroll view
         itemManager.PopulateScrollView(allItems);
-        saveLoadManager.Load(itemManager);
     }
 
     public void SaveGame()
