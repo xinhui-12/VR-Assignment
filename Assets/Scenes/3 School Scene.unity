@@ -27684,12 +27684,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1068071371}
   activePauseMenuUI: 1
-  soundEffectsSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  brightnessSlider: {fileID: 0}
-  soundEffectsSource: {fileID: 0}
-  musicSource: {fileID: 0}
-  environmentLights: []
+  soundEffectsSlider: {fileID: 78731937}
+  musicSlider: {fileID: 752013433}
+  brightnessSlider: {fileID: 2106294046}
+  soundEffectsSource: {fileID: 305619105}
+  musicSource: {fileID: 149247378}
+  environmentLights:
+  - {fileID: 157207113}
+  - {fileID: 1584069356}
 --- !u!114 &681059911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46228,7 +46230,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -62982,7 +62984,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
