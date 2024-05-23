@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class UICanvasFollower : MonoBehaviour
 {
@@ -11,23 +12,26 @@ public class UICanvasFollower : MonoBehaviour
         SetInitialPositionAndRotation();
     }
 
-    private void Update()
+    public void OnToggleUI(InputAction.CallbackContext context)
     {
-        // Check if the right mouse button is clicked
-        if (Input.GetMouseButtonDown(1))
-        {
+        if (context.performed)
             ToggleUICanvas();
-        }
     }
 
     private void SetInitialPositionAndRotation()
     {
-        Vector3 newPosition = vrCamera.position + vrCamera.forward * distanceFromCamera;
-        transform.position = newPosition;
+        //Vector3 newPosition = vrCamera.position + vrCamera.forward * distanceFromCamera;
+        //transform.position = newPosition;
 
-        Vector3 lookDirection = transform.position - vrCamera.position;
-        lookDirection.y = 0;
-        transform.rotation = Quaternion.LookRotation(lookDirection);
+        //Vector3 lookDirection = transform.position - vrCamera.position;
+        //lookDirection.y = 0;
+        //transform.rotation = Quaternion.LookRotation(lookDirection);
+
+        // Position the pause menu in front of the user
+        Vector3 cameraPosition = Camera.main.transform.position;
+        Vector3 cameraForward = Camera.main.transform.forward;
+        uiCanvas.transform.position = cameraPosition + cameraForward * 1.0f; // Adjust the distance as needed
+        uiCanvas.transform.rotation = Quaternion.LookRotation(cameraForward);
     }
 
     private void ToggleUICanvas()
