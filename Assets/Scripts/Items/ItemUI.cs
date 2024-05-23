@@ -1,13 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 
 public class ItemUI : MonoBehaviour
 {
     public Image icon;
     public TMP_Text itemName;
-    public Button button; // Reference to the button component
+    public Button button;
 
     private Item item;
     private ItemManager itemManager;
@@ -28,10 +27,9 @@ public class ItemUI : MonoBehaviour
         icon.sprite = item.itemIcon;
         itemName.text = item.itemName;
 
-        // Set the auto-size options for the TextMeshPro text component
         itemName.enableAutoSizing = true;
-        itemName.fontSizeMin = 10; // Minimum font size
-        itemName.fontSizeMax = 100; // Maximum font size
+        itemName.fontSizeMin = 10;
+        itemName.fontSizeMax = 100;
 
         button.onClick.AddListener(OnItemClick);
     }
@@ -40,10 +38,7 @@ public class ItemUI : MonoBehaviour
     {
         Debug.Log("Item clicked: " + item.itemName);
 
-        Vector3 cameraPosition = Camera.main.transform.position;
-        Vector3 cameraForward = Camera.main.transform.forward;
-        //Vector3 defaultPosition = Vector3.zero;
-        Vector3 defaultPosition = cameraPosition + cameraForward * 1.0f;
+        Vector3 defaultPosition = Vector3.zero;
         Vector3 defaultScale = Vector3.one;
         Color defaultColor = Color.white;
         Material defaultMaterial = null;

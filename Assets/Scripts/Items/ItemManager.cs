@@ -6,8 +6,6 @@ public class ItemManager : MonoBehaviour
     public Transform contentPanel;
     public GameObject itemUIPrefab;
 
-    private bool isContentPanelInitialized = false;
-
     void Start()
     {
         if (contentPanel != null)
@@ -30,6 +28,9 @@ public class ItemManager : MonoBehaviour
 
         Debug.Log("Populating items...");
         foreach (Item item in items)
+
+
+
         {
             Debug.Log("Populating item: " + item.itemName);
             GameObject newItem = Instantiate(itemUIPrefab, contentPanel);
@@ -37,15 +38,10 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    public void InstantiateItem(Item item, Vector3 position, Vector3 scale, Color color, Material material)
+    public void InstantiateItem(Item item, Vector3 position, Vector3 scale)
     {
         Debug.Log("Instantiating item: " + item.itemName);
         GameObject newItem = Instantiate(item.itemPrefab, position, Quaternion.identity);
-        ItemController itemController = newItem.AddComponent<ItemController>();
-        itemController.item = item;
-        itemController.customScale = scale;
-        itemController.customColor = color;
-        itemController.customMaterial = material;
-        itemController.ApplyCustomizations();
+        newItem.transform.localScale = scale;
     }
 }

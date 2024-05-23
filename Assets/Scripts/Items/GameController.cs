@@ -26,7 +26,11 @@ public class GameController : MonoBehaviour
 
     public void SaveGame()
     {
-        List<ItemController> itemInstances = new List<ItemController>(FindObjectsOfType<ItemController>());
+        List<GameObject> itemInstances = new List<GameObject>();
+        foreach (var item in allItems)
+        {
+            itemInstances.AddRange(GameObject.FindGameObjectsWithTag(item.itemName));
+        }
         saveLoadManager.Save(itemInstances);
     }
 

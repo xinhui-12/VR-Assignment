@@ -8,30 +8,25 @@ public class ItemInstanceData
     public int itemId;
     public Vector3 position;
     public Vector3 scale;
-    public Color color;
-    public string materialName;
 }
 
 public class SaveLoadManager : MonoBehaviour
 {
-    public List<Item> allItems; // Reference to all item data Scriptable Objects
+    public List<Item> allItems; 
     public string saveFilePath = "itemInstances.json";
 
-    public void Save(List<ItemController> itemInstances)
+    public void Save(List<GameObject> itemInstances)
     {
         List<ItemInstanceData> instanceDataList = new List<ItemInstanceData>();
         foreach (var instance in itemInstances)
         {
-            var renderer = instance.GetComponent<Renderer>();
-            string materialName = renderer != null ? renderer.material.name : "";
+            var itemComponent = instance.GetComponent<ItemComponent>(); 
 
             ItemInstanceData data = new ItemInstanceData
             {
-                itemId = instance.item.itemID,
+                itemId = itemComponent.item.itemID,
                 position = instance.transform.position,
-                scale = instance.customScale,
-                color = instance.customColor,
-                materialName = materialName
+                scale = instance.transform.localScale,
             };
             instanceDataList.Add(data);
         }
@@ -51,8 +46,7 @@ public class SaveLoadManager : MonoBehaviour
             foreach (var data in instanceDataList)
             {
                 Item itemData = allItems.Find(item => item.itemID == data.itemId);
-                Material material = Resources.Load<Material>(data.materialName); // Assuming materials are in Resources folder
-                itemManager.InstantiateItem(itemData, data.position, data.scale, data.color, material);
+                itemManager.InstantiateItem(itemData, data.position, data.scale);
             }
         }
     }
@@ -71,3 +65,4 @@ public class Serialization<T>
         return target;
     }
 }
+
