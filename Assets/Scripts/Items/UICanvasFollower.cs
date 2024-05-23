@@ -21,11 +21,11 @@ public class UICanvasFollower : MonoBehaviour
     private void SetInitialPositionAndRotation()
     {
         Vector3 newPosition = vrCamera.position + vrCamera.forward * distanceFromCamera;
-        transform.position = newPosition;
+        uiCanvas.transform.position = newPosition;
 
-        Vector3 lookDirection = transform.position - vrCamera.position;
+        Vector3 lookDirection = uiCanvas.transform.position - vrCamera.position;
         lookDirection.y = 0;
-        transform.rotation = Quaternion.LookRotation(lookDirection);
+        uiCanvas.transform.rotation = Quaternion.LookRotation(lookDirection);
     }
 
     private void ToggleUICanvas()
