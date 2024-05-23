@@ -3,9 +3,17 @@ using System.Collections.Generic;
 
 public class ItemManager : MonoBehaviour
 {
-    public Transform contentPanel;
+    private Transform contentPanel;
     public GameObject itemUIPrefab;
 
+    public void Awake()
+    {
+        contentPanel = GameObject.Find("InventoryContent").transform;
+        if (contentPanel == null)
+        {
+            Debug.LogError("Content panel not found!");
+        }
+    }
     public void PopulateScrollView(List<Item> items)
     {
         Debug.Log("Populating items...");
