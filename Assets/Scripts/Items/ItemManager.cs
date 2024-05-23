@@ -6,8 +6,28 @@ public class ItemManager : MonoBehaviour
     public Transform contentPanel;
     public GameObject itemUIPrefab;
 
+    private bool isContentPanelInitialized = false;
+
+    void Start()
+    {
+        if (contentPanel != null)
+        {
+            PopulateScrollView(new List<Item>());
+        }
+        else
+        {
+            Debug.LogError("Content panel not assigned to ItemManager!");
+        }
+    }
+
     public void PopulateScrollView(List<Item> items)
     {
+        if (contentPanel == null)
+        {
+            Debug.LogError("Content panel not assigned to ItemManager!");
+            return;
+        }
+
         Debug.Log("Populating items...");
         foreach (Item item in items)
         {

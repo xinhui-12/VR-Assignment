@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,15 +6,22 @@ public class GameController : MonoBehaviour
 {
     public ItemManager itemManager;
     public SaveLoadManager saveLoadManager;
-    public List<Item> allItems; // Assign this in the Inspector with all your items
+    public List<Item> allItems;
 
     void Start()
     {
-        // Populate the scroll view with all items on start
-        itemManager.PopulateScrollView(allItems);
-
-        // Optionally, load existing instances on start
         saveLoadManager.Load(itemManager);
+        StartCoroutine(PopulateScrollViewCoroutine());
+    }
+
+    IEnumerator PopulateScrollViewCoroutine()
+    {
+        while (!itemManager.enabled)
+        {
+            yield return null;
+        }
+
+        itemManager.PopulateScrollView(allItems);
     }
 
     public void SaveGame()
