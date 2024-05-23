@@ -763,6 +763,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 917e44bfb28237c4285cd26ae9e4aba9, type: 2}
   - {fileID: 11400000, guid: 1b10f85e8c42bdd4e8f7c5fbc82f1134, type: 2}
   - {fileID: 11400000, guid: 16eb34c06d0f2fc43ad3e49c102d7fa2, type: 2}
+  - {fileID: 11400000, guid: 9e10829b5718b8a40a4b3ce19331b0d7, type: 2}
+  - {fileID: 11400000, guid: 5bbef09e4d4f1ff4a869c9743f66ff61, type: 2}
+  - {fileID: 11400000, guid: fcbb43ea30ec14043b3c9032b55de64d, type: 2}
+  - {fileID: 11400000, guid: 287cd89ac5cb946408406f7db40c37d7, type: 2}
   saveFilePath: itemInstances.json
 --- !u!4 &258237294
 Transform:
@@ -2145,6 +2149,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 917e44bfb28237c4285cd26ae9e4aba9, type: 2}
   - {fileID: 11400000, guid: 1b10f85e8c42bdd4e8f7c5fbc82f1134, type: 2}
   - {fileID: 11400000, guid: 16eb34c06d0f2fc43ad3e49c102d7fa2, type: 2}
+  - {fileID: 11400000, guid: 9e10829b5718b8a40a4b3ce19331b0d7, type: 2}
+  - {fileID: 11400000, guid: 5bbef09e4d4f1ff4a869c9743f66ff61, type: 2}
+  - {fileID: 11400000, guid: fcbb43ea30ec14043b3c9032b55de64d, type: 2}
+  - {fileID: 11400000, guid: 287cd89ac5cb946408406f7db40c37d7, type: 2}
 --- !u!4 &1081353566
 Transform:
   m_ObjectHideFlags: 0
