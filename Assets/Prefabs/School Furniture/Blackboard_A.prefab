@@ -90,7 +90,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3248280421879577599}
         m_TargetAssemblyTypeName: ScaleSlider, Assembly-CSharp
         m_MethodName: SetZScale
         m_Mode: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3248280421879577599}
         m_TargetAssemblyTypeName: ScaleSlider, Assembly-CSharp
         m_MethodName: SetXScale
         m_Mode: 0
@@ -2209,7 +2209,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3248280421879577599}
         m_TargetAssemblyTypeName: ScaleSlider, Assembly-CSharp
         m_MethodName: SetYScale
         m_Mode: 0
