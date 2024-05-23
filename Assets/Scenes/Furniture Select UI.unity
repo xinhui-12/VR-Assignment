@@ -2633,6 +2633,7 @@ GameObject:
   - component: {fileID: 1331895382}
   - component: {fileID: 1331895381}
   - component: {fileID: 1331895385}
+  - component: {fileID: 1331895386}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2742,6 +2743,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &1331895386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331895380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86df10ac03521dd4ba3f1f7d36b46835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vrCamera: {fileID: 237862301}
+  distanceFromCamera: 1
+  uiCanvas: {fileID: 6416337489399491480}
 --- !u!1001 &1411014537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3635,13 +3651,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3780311939656293269, guid: cc316c28915c9eb48b0b5910694e2e82, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6783237308309878363, guid: cc316c28915c9eb48b0b5910694e2e82,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9149915336424817200}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc316c28915c9eb48b0b5910694e2e82, type: 3}
 --- !u!224 &4582790955795306026 stripped
 RectTransform:
@@ -3661,27 +3674,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2367171438403433588}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &9149915336424817199 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6783237308309878363, guid: cc316c28915c9eb48b0b5910694e2e82,
-    type: 3}
-  m_PrefabInstance: {fileID: 2367171438403433588}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &9149915336424817200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9149915336424817199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86df10ac03521dd4ba3f1f7d36b46835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vrCamera: {fileID: 237862301}
-  distanceFromCamera: 2
-  uiCanvas: {fileID: 6416337489399491480}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
