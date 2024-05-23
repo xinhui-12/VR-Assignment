@@ -1,13 +1,15 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class PauseMenuManager : MonoBehaviour
+
+public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
-    public InputActionReference pauseAction;
+    public bool activePauseMenuUI = true;
     public Slider soundEffectsSlider;
     public Slider musicSlider;
     public Slider brightnessSlider;
@@ -15,21 +17,10 @@ public class PauseMenuManager : MonoBehaviour
     public AudioSource musicSource;
     public List<Light> environmentLights;
 
-    private void OnEnable()
-    {
-        pauseAction.action.Enable();
-        pauseAction.action.performed += OnPauseAction;
-    }
 
-    private void OnDisable()
+    // Start is called before the first frame update
+    void Start()
     {
-        pauseAction.action.Disable();
-        pauseAction.action.performed -= OnPauseAction;
-    }
-
-    private void Start()
-    {
-        // Initialize sliders with current values
         soundEffectsSlider.value = PlayerPrefs.GetFloat("SoundEffectsVolume", 1.0f);
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
         brightnessSlider.value = PlayerPrefs.GetFloat("Brightness", 1.0f);
@@ -38,37 +29,38 @@ public class PauseMenuManager : MonoBehaviour
         musicSlider.onValueChanged.AddListener(OnMusicSliderChanged);
         brightnessSlider.onValueChanged.AddListener(OnBrightnessSliderChanged);
 
-        pauseMenuUI.SetActive(false);
+        DisplayPauseMenuUI();
     }
 
-    private void OnPauseAction(InputAction.CallbackContext context)
+
+    public void PauseButtonPressed(InputAction.CallbackContext context)
     {
-        Debug.Log("Pause action triggered");
-        TogglePauseMenu();
+        if (context.performed)
+            DisplayPauseMenuUI();
+        Debug.Log("Yes");
+
     }
-
-    private void TogglePauseMenu()
+    public void DisplayPauseMenuUI()
     {
-        bool isActive = pauseMenuUI.activeSelf;
-        pauseMenuUI.SetActive(!isActive);
-
-        if (!isActive)
+        if (activePauseMenuUI)
         {
-            Debug.Log("Showing Pause Menu");
+            pauseMenuUI.SetActive(false);
+            activePauseMenuUI = false;
+            Time.timeScale = 1.0f;
+
+        }
+
+        else if (!activePauseMenuUI)
+        {
             // Position the pause menu in front of the user
             Vector3 cameraPosition = Camera.main.transform.position;
             Vector3 cameraForward = Camera.main.transform.forward;
-            pauseMenuUI.transform.position = cameraPosition + cameraForward * 2.0f; // Adjust the distance as needed
+            pauseMenuUI.transform.position = cameraPosition + cameraForward * 3.0f; // Adjust the distance as needed
             pauseMenuUI.transform.rotation = Quaternion.LookRotation(cameraForward);
 
-            // Pause the game
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Debug.Log("Hiding Pause Menu");
-            // Resume the game
-            Time.timeScale = 1f;
+            pauseMenuUI.SetActive(true);
+            activePauseMenuUI = true;
+            Time.timeScale = 0;
         }
     }
 
@@ -93,14 +85,19 @@ public class PauseMenuManager : MonoBehaviour
         PlayerPrefs.SetFloat("Brightness", value);
     }
 
-    public void OnResumeButton()
+    public void ResumeGame()
     {
-        TogglePauseMenu();
+
+        pauseMenuUI.SetActive(false);
+        activePauseMenuUI = false;
+        Time.timeScale = 1.0f;
+
     }
 
-    public void OnExitButton()
+    public void ExitGame()
     {
-        Time.timeScale = 1f; // Ensure time is running before changing scenes
         SceneManager.LoadScene(0);
+        Time.timeScale = 1.0f;
+        Debug.Log("Exit");
     }
 }
