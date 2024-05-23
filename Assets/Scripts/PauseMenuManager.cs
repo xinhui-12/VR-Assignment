@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour
             // Position the pause menu in front of the user
             Vector3 cameraPosition = Camera.main.transform.position;
             Vector3 cameraForward = Camera.main.transform.forward;
-            pauseMenuUI.transform.position = cameraPosition + cameraForward * 3.0f; // Adjust the distance as needed
+            pauseMenuUI.transform.position = cameraPosition + cameraForward * 2.0f; // Adjust the distance as needed
             pauseMenuUI.transform.rotation = Quaternion.LookRotation(cameraForward);
 
             pauseMenuUI.SetActive(true);
