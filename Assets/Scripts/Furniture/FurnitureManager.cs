@@ -5,7 +5,7 @@ public class FurnitureManager : MonoBehaviour
     public GameObject[] furniturePrefabs;
     private GameObject currentFurniture;
     public Transform gameUI;
-    public float distanceFromCamera = 2.0f;
+    public float distanceFromCamera = 1.0f;
 
     // Method to instantiate furniture
     public void PlaceFurniture(int index)

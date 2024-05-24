@@ -2239,7 +2239,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6579687318433568903}
-  - component: {fileID: 4048221673229194661}
   - component: {fileID: 6380011759325453557}
   - component: {fileID: -1465178877535687353}
   - component: {fileID: -2358503022472574478}
@@ -2273,22 +2272,6 @@ Transform:
   - {fileID: 7999417235978881645}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4048221673229194661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5765854841646629437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eab883549c13164288f2afd70c67a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: fcbb43ea30ec14043b3c9032b55de64d, type: 2}
-  customScale: {x: 0, y: 0, z: 0}
-  customColor: {r: 0, g: 0, b: 0, a: 0}
-  customMaterial: {fileID: 0}
 --- !u!54 &6380011759325453557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2344,9 +2327,9 @@ MonoBehaviour:
   prefabToScale: {fileID: 5765854841646629437}
   minScale: 0.5
   maxScale: 2
-  scaleTextX: {fileID: 2275005013872809319}
-  scaleTextY: {fileID: 923509054143414114}
-  scaleTextZ: {fileID: 4765921059724842137}
+  scaleTextX: {fileID: 8511210490435864370}
+  scaleTextY: {fileID: 5480127701751704265}
+  scaleTextZ: {fileID: 1562615666466093848}
 --- !u!65 &4698320192006103487
 BoxCollider:
   m_ObjectHideFlags: 0

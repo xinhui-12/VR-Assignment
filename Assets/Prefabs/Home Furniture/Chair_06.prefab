@@ -1486,9 +1486,9 @@ MonoBehaviour:
   prefabToScale: {fileID: 3768494818739516819}
   minScale: 0.5
   maxScale: 2
-  scaleTextX: {fileID: 3305727925166659848}
-  scaleTextY: {fileID: 1479249611819596795}
-  scaleTextZ: {fileID: 4100459785430421528}
+  scaleTextX: {fileID: 3150357448016401931}
+  scaleTextY: {fileID: 6031040383457126625}
+  scaleTextZ: {fileID: 4552224996297518974}
 --- !u!65 &-1656690436626777763
 BoxCollider:
   m_ObjectHideFlags: 0
