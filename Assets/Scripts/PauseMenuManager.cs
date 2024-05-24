@@ -37,7 +37,6 @@ public class PauseMenu : MonoBehaviour
     {
         if (context.performed)
             DisplayPauseMenuUI();
-        Debug.Log("Yes");
 
     }
     public void DisplayPauseMenuUI()
@@ -98,6 +97,5 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1.0f;
-        Debug.Log("Exit");
     }
 }
